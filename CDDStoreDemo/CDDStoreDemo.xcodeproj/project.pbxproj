@@ -1705,7 +1705,7 @@
 				TargetAttributes = {
 					187E67851E7D793000722607 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 2BU7DGY6CY;
+						DevelopmentTeam = 25H67J6944;
 						ProvisioningStyle = Automatic;
 					};
 					187E679E1E7D793100722607 = {
@@ -2136,11 +2136,8 @@
 			baseConfigurationReference = B6042526F9488CF29434ADDB /* Pods-CDDStoreDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BU7DGY6CY;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CDDStoreDemo/Class/Others(其他)/Tools/WXFrameworks",
-				);
+				DEVELOPMENT_TEAM = 25H67J6944;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = CDDStoreDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CDDStoreDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -2155,11 +2152,8 @@
 			baseConfigurationReference = F3736E949C41228120EF9FC0 /* Pods-CDDStoreDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2BU7DGY6CY;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/CDDStoreDemo/Class/Others(其他)/Tools/WXFrameworks",
-				);
+				DEVELOPMENT_TEAM = 25H67J6944;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = CDDStoreDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = CDDStoreDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
