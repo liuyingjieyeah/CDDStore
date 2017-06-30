@@ -624,7 +624,6 @@
 		18DD83711F0650EC00F47095 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				18DD83721F0650EC00F47095 /* Activate(引导页面) */,
 				18DD83761F0650EC00F47095 /* AppDelegate */,
 				18DD83791F0650EC00F47095 /* Classify(分类) */,
 				18DD83F21F0650EC00F47095 /* Expand(扩展) */,
@@ -635,37 +634,6 @@
 				18DD85071F0650EC00F47095 /* ShoppingCar(购物车) */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		18DD83721F0650EC00F47095 /* Activate(引导页面) */ = {
-			isa = PBXGroup;
-			children = (
-				18DD83731F0650EC00F47095 /* Controller */,
-				18DD83741F0650EC00F47095 /* Model */,
-				18DD83751F0650EC00F47095 /* View */,
-			);
-			path = "Activate(引导页面)";
-			sourceTree = "<group>";
-		};
-		18DD83731F0650EC00F47095 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		18DD83741F0650EC00F47095 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		18DD83751F0650EC00F47095 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		18DD83761F0650EC00F47095 /* AppDelegate */ = {
