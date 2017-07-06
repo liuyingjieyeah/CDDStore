@@ -181,12 +181,13 @@
 		18DD85BE1F0650EC00F47095 /* CountDownShop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18DD85041F0650EC00F47095 /* CountDownShop.plist */; };
 		18DD85BF1F0650EC00F47095 /* GoodsGrid.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18DD85051F0650EC00F47095 /* GoodsGrid.plist */; };
 		18DD85C01F0650EC00F47095 /* HomeHighGoods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18DD85061F0650EC00F47095 /* HomeHighGoods.plist */; };
-		18DD85C11F0650EC00F47095 /* DCShopCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD850A1F0650EC00F47095 /* DCShopCarViewController.m */; };
 		18DD85C21F0650EC00F47095 /* DCRecommendItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD850D1F0650EC00F47095 /* DCRecommendItem.m */; };
 		18DD85C31F0650EC00F47095 /* DCEmptyCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD85101F0650EC00F47095 /* DCEmptyCartView.m */; };
 		18DD85C41F0650EC00F47095 /* DCRecommendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD85121F0650EC00F47095 /* DCRecommendCell.m */; };
 		18DD85C51F0650EC00F47095 /* DCRecommendReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DD85141F0650EC00F47095 /* DCRecommendReusableView.m */; };
 		18DD85C71F0650F400F47095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DD85C61F0650F400F47095 /* Assets.xcassets */; };
+		18F64B1B1F0E03F500DB978C /* PingFang Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18F64B1A1F0E03F500DB978C /* PingFang Medium.ttf */; };
+		18F64B1E1F0E05E100DB978C /* DCMyTrolleyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F64B1D1F0E05E100DB978C /* DCMyTrolleyViewController.m */; };
 		B4BD6CD985407C4066CE3D78 /* libPods-CDDStoreDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D28CF44E5CEBF6947E889711 /* libPods-CDDStoreDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -537,8 +538,6 @@
 		18DD85041F0650EC00F47095 /* CountDownShop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountDownShop.plist; sourceTree = "<group>"; };
 		18DD85051F0650EC00F47095 /* GoodsGrid.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GoodsGrid.plist; sourceTree = "<group>"; };
 		18DD85061F0650EC00F47095 /* HomeHighGoods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomeHighGoods.plist; sourceTree = "<group>"; };
-		18DD85091F0650EC00F47095 /* DCShopCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCShopCarViewController.h; sourceTree = "<group>"; };
-		18DD850A1F0650EC00F47095 /* DCShopCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCShopCarViewController.m; sourceTree = "<group>"; };
 		18DD850C1F0650EC00F47095 /* DCRecommendItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRecommendItem.h; sourceTree = "<group>"; };
 		18DD850D1F0650EC00F47095 /* DCRecommendItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRecommendItem.m; sourceTree = "<group>"; };
 		18DD850F1F0650EC00F47095 /* DCEmptyCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCEmptyCartView.h; sourceTree = "<group>"; };
@@ -549,6 +548,9 @@
 		18DD85141F0650EC00F47095 /* DCRecommendReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRecommendReusableView.m; sourceTree = "<group>"; };
 		18DD85C61F0650F400F47095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18DD85C81F06512100F47095 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		18F64B1A1F0E03F500DB978C /* PingFang Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PingFang Medium.ttf"; sourceTree = "<group>"; };
+		18F64B1C1F0E05E100DB978C /* DCMyTrolleyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCMyTrolleyViewController.h; sourceTree = "<group>"; };
+		18F64B1D1F0E05E100DB978C /* DCMyTrolleyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCMyTrolleyViewController.m; sourceTree = "<group>"; };
 		B6042526F9488CF29434ADDB /* Pods-CDDStoreDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDStoreDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDDStoreDemo/Pods-CDDStoreDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D28CF44E5CEBF6947E889711 /* libPods-CDDStoreDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDDStoreDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3736E949C41228120EF9FC0 /* Pods-CDDStoreDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDDStoreDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDDStoreDemo/Pods-CDDStoreDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -612,6 +614,7 @@
 		187E67891E7D793100722607 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18F64B1A1F0E03F500DB978C /* PingFang Medium.ttf */,
 				18DD85C81F06512100F47095 /* PrefixHeader.pch */,
 				18DD85C61F0650F400F47095 /* Assets.xcassets */,
 				187E67971E7D793100722607 /* LaunchScreen.storyboard */,
@@ -1589,8 +1592,8 @@
 		18DD85081F0650EC00F47095 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				18DD85091F0650EC00F47095 /* DCShopCarViewController.h */,
-				18DD850A1F0650EC00F47095 /* DCShopCarViewController.m */,
+				18F64B1C1F0E05E100DB978C /* DCMyTrolleyViewController.h */,
+				18F64B1D1F0E05E100DB978C /* DCMyTrolleyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1769,6 +1772,7 @@
 				18DD85B41F0650EC00F47095 /* DetailRecommend.plist in Resources */,
 				18DD85BB1F0650EC00F47095 /* MyRecreationFlow.plist in Resources */,
 				18DD85BD1F0650EC00F47095 /* RecommendShop.plist in Resources */,
+				18F64B1B1F0E03F500DB978C /* PingFang Medium.ttf in Resources */,
 				18DD85B81F0650EC00F47095 /* DeliveryAdress.plist in Resources */,
 				18DD854D1F0650EC00F47095 /* addressData.plist in Resources */,
 				18DD85B51F0650EC00F47095 /* FiltrateItem.plist in Resources */,
@@ -1861,6 +1865,7 @@
 				18DD85901F0650EC00F47095 /* DCOverFootView.m in Sources */,
 				18DD85551F0650EC00F47095 /* LBXScanLineAnimation.m in Sources */,
 				18DD85751F0650EC00F47095 /* XWCoolAnimator+XWLines.m in Sources */,
+				18F64B1E1F0E05E100DB978C /* DCMyTrolleyViewController.m in Sources */,
 				18DD851F1F0650EC00F47095 /* DCCommentCell.m in Sources */,
 				18DD85A61F0650EC00F47095 /* DCMessageItem.m in Sources */,
 				18DD85851F0650EC00F47095 /* XWFilterAnimator.m in Sources */,
@@ -1920,7 +1925,6 @@
 				18DD85AD1F0650EC00F47095 /* DCMySelfHeadView.m in Sources */,
 				18DD85501F0650EC00F47095 /* WJYAlertView.m in Sources */,
 				18DD855F1F0650EC00F47095 /* ZXingWrapper.m in Sources */,
-				18DD85C11F0650EC00F47095 /* DCShopCarViewController.m in Sources */,
 				18DD85861F0650EC00F47095 /* XWFilterTransitionView.m in Sources */,
 				18DD85371F0650EC00F47095 /* DCFiltrateAttrCell.m in Sources */,
 				18DD857E1F0650EC00F47095 /* XWFilterAnimator+XWCopyMachine.m in Sources */,

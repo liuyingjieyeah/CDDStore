@@ -41,5 +41,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PingFang Medium.ttf</string>
+	</array>
 </dict>
 </plist>
