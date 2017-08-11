@@ -275,14 +275,16 @@ static NSString *const DCFeatureChoseTopCellID = @"DCFeatureChoseTopCell";
 #pragma mark - <UICollectionViewDelegate>
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    _featureAttr[indexPath.section].list[indexPath.row].isSelect = !_featureAttr[indexPath.section].list[indexPath.row].isSelect;
-    
-    //限制每组内的Item只能选中一个
-    for (NSInteger j = 0; j < _featureAttr[indexPath.section].list.count; j++) {
-        _featureAttr[indexPath.section].list[j].isSelect = NO;
+
+    //限制每组内的Item只能选中一个(加入质数选择)
+    if (_featureAttr[indexPath.section].list[indexPath.row].isSelect == NO) {
+        for (NSInteger j = 0; j < _featureAttr[indexPath.section].list.count; j++) {
+            _featureAttr[indexPath.section].list[j].isSelect = NO;
+        }
     }
-    _featureAttr[indexPath.section].list[indexPath.row].isSelect = YES;
-                 
+    _featureAttr[indexPath.section].list[indexPath.row].isSelect = !_featureAttr[indexPath.section].list[indexPath.row].isSelect;
+
+    
     //section，item 循环讲选中的所有Item加入数组中 ，数组mutableCopy初始化
     _seleArray = [@[] mutableCopy];
     for (NSInteger i = 0; i < _featureAttr.count; i++) {
