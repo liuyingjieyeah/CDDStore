@@ -73,7 +73,8 @@
     
     DCUserInfo *userInfo = UserInfoData;
     _iconImageView = [[UIImageView alloc] init];
-    _iconImageView.image = [[UIImage imageNamed:userInfo.userimage] dc_circleImage];
+    UIImage *image = ([userInfo.userimage isEqualToString:@"icon"]) ? [[UIImage imageNamed:@"icon"] dc_circleImage] : [[DCSpeedy Base64StrToUIImage:userInfo.userimage] dc_circleImage];
+    _iconImageView.image = image;
 
     [_commentTextView addSubview:_iconImageView];
     
@@ -84,7 +85,7 @@
     
     _contentLabel = [[UILabel alloc] init];
     _contentLabel.font = PFR12Font;
-    _contentLabel.text = @"如果Demo对你有所帮助，别忘了点星支持下！";
+    _contentLabel.text = @"如果项目对你有所帮助，别忘了点星支持下！";
     [_commentTextView addSubview:_contentLabel];
     
     _timeLabel = [[UILabel alloc] init];

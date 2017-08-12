@@ -60,6 +60,13 @@ static NSString *const DCMessageNoteCellID = @"DCMessageNoteCell";
 }
 
 #pragma mark - LifeCyle
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if (self.navigationController.navigationBar.barTintColor == DCBGColor)return;
+    self.navigationController.navigationBar.barTintColor = DCBGColor;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

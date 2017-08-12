@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <Photos/Photos.h>
+#import "TZAssetModel.h"
 
 @class TZAlbumModel,TZAssetModel;
 @protocol TZImagePickerControllerDelegate;
@@ -18,6 +19,7 @@
 @property (nonatomic, strong) PHCachingImageManager *cachingImageManager;
 
 + (instancetype)manager NS_SWIFT_NAME(default());
++ (void)deallocManager;
 
 @property (assign, nonatomic) id<TZImagePickerControllerDelegate> pickerDelegate;
 
@@ -25,6 +27,8 @@
 
 /// Default is 600px / 默认600像素宽
 @property (nonatomic, assign) CGFloat photoPreviewMaxWidth;
+/// The pixel width of output image, Default is 828px / 导出图片的宽度，默认828像素宽
+@property (nonatomic, assign) CGFloat photoWidth;
 
 /// Default is 4, Use in photos collectionView in TZPhotoPickerController
 /// 默认4列, TZPhotoPickerController中的照片collectionView
@@ -74,29 +78,31 @@
 
 /// Get video 获得视频
 - (void)getVideoWithAsset:(id)asset completion:(void (^)(AVPlayerItem * playerItem, NSDictionary * info))completion;
-- (void)getVideoWithAsset:(id)asset progressHandler:(void (^)(double progress, NSError *error, BOOL *stop, NSDictionary *info))progressHandler completion:(void (^_Nonnull)(AVPlayerItem * _Nullable, NSDictionary * _Nullable))completion;
+- (void)getVideoWithAsset:(id)asset progressHandler:(void (^)(double progress, NSError *error, BOOL *stop, NSDictionary *info))progressHandler completion:(void (^)(AVPlayerItem *, NSDictionary *))completion;
 
 /// Export video 导出视频
-- (void)getVideoOutputPathWithAsset:(id _Nonnull )asset completion:(void (^_Nonnull)(NSString * _Nonnull outputPath))completion;
+- (void)getVideoOutputPathWithAsset:(id)asset completion:(void (^)(NSString *outputPath))completion;
 
 /// Get photo bytes 获得一组照片的大小
-- (void)getPhotosBytesWithArray:(NSArray *_Nonnull)photos completion:(void (^_Nonnull)(NSString * _Nonnull totalBytes))completion;
+- (void)getPhotosBytesWithArray:(NSArray *)photos completion:(void (^)(NSString *totalBytes))completion;
 
 /// Judge is a assets array contain the asset 判断一个assets数组是否包含这个asset
-- (BOOL)isAssetsArray:(NSArray *_Nonnull)assets containAsset:(id _Nonnull )asset;
+- (BOOL)isAssetsArray:(NSArray *)assets containAsset:(id)asset;
 
-- (NSString *_Nonnull)getAssetIdentifier:(id _Nonnull )asset;
-- (BOOL)isCameraRollAlbum:(NSString *_Nonnull)albumName;
+- (NSString *)getAssetIdentifier:(id)asset;
+- (BOOL)isCameraRollAlbum:(NSString *)albumName;
 
 /// 检查照片大小是否满足最小要求
-- (BOOL)isPhotoSelectableWithAsset:(id _Nonnull )asset;
-- (CGSize)photoSizeWithAsset:(id _Nonnull )asset;
+- (BOOL)isPhotoSelectableWithAsset:(id)asset;
+- (CGSize)photoSizeWithAsset:(id)asset;
 
 /// 修正图片转向
-- (UIImage *_Nonnull)fixOrientation:(UIImage *_Nonnull)aImage;
+- (UIImage *)fixOrientation:(UIImage *)aImage;
+
+/// 获取asset的资源类型
+- (TZAssetModelMediaType)getAssetType:(id)asset;
 
 @end
-
 
 //@interface TZSortDescriptor : NSSortDescriptor
 //

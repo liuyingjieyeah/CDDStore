@@ -12,6 +12,7 @@ pod 'SDWebImage' ,"3.8.2"
 pod 'ZXingObjC'
 pod 'TZImagePickerController'
 pod 'IQKeyboardManager'
+pod 'DZNEmptyDataSet'
 
 target 'CDDStoreDemo' do
 

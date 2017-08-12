@@ -14,7 +14,7 @@
 /* 商品图片 */
 @property (strong , nonatomic)NSString *goodImageView;
 /* 上一次选择的属性 */
-@property (strong , nonatomic)NSArray *lastSeleArray;
+@property (strong , nonatomic)NSMutableArray *lastSeleArray;
 /* 上一次选择的数量 */
 @property (assign , nonatomic)NSInteger lastNum;
 

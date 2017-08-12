@@ -291,11 +291,15 @@ static NSString *const DCFeatureChoseTopCellID = @"DCFeatureChoseTopCell";
         for (NSInteger j = 0; j < _featureAttr[i].list.count; j++) {
             if (_featureAttr[i].list[j].isSelect == YES) {
                 [_seleArray addObject:_featureAttr[i].list[j].infoname];
+            }else{
+                [_seleArray removeObject:_featureAttr[i].list[j].infoname];
+                [_lastSeleArray removeAllObjects];
             }
         }
     }
+    NSLog(@"seleArray:%zd",_seleArray.count);
     //刷新tableView和collectionView
-    [collectionView reloadData];
+    [self.collectionView reloadData];
     [self.tableView reloadData];
 }
 
