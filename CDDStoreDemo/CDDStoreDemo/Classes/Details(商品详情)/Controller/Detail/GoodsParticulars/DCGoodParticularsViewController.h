@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+//详情页
 @interface DCGoodParticularsViewController : UIViewController
 
 @end

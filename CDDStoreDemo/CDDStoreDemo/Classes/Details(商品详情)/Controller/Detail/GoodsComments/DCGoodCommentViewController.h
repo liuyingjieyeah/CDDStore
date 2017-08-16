@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+//评论页
 @interface DCGoodCommentViewController : UIViewController
 
 @end

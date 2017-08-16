@@ -41,7 +41,7 @@
 
 @end
 
-static NSString *const DCClassCategoryCellID = @"DCClassCategoryCell";
+static NSString *const DCClassCategoryCellID = @"DCClassCategoryCell";//左侧tableview分类
 static NSString *const DCBrandsSortHeadViewID = @"DCBrandsSortHeadView";
 static NSString *const DCGoodsSortCellID = @"DCGoodsSortCell";
 static NSString *const DCBrandSortCellID = @"DCBrandSortCell";
